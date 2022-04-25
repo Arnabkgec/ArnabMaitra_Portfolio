@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="529.16669mm"
+   height="370.41666mm"
+   viewBox="0 0 529.16668 370.41666"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="grid.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.43213073"
+     inkscape:cx="971.9281"
+     inkscape:cy="701.1767"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g947" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3992">
+      <stop
+         style="stop-color:#9ca3af;stop-opacity:1"
+         offset="0"
+         id="stop3988" />
+      <stop
+         style="stop-color:#a8a29e;stop-opacity:0;"
+         offset="1"
+         id="stop3990" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3992"
+       id="linearGradient3994"
+       x1="1000"
+       y1="1400"
+       x2="1000"
+       y2="0"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(169.34664,50.358085)">
+    <g
+       id="g947"
+       transform="matrix(0.26458333,0,0,0.26458333,-169.34664,-50.358085)">
+      <g
+         id="g3986"
+         style="stroke:url(#linearGradient3994)">
+        <line
+           y1="700"
+           y2="700"
+           x1="0"
+           x2="2000"
+           style="stroke:url(#linearGradient3994);stroke-width:1400;stroke-dasharray:1, 98, 1, 0"
+           id="line826" />
+        <line
+           x1="1000"
+           x2="1000"
+           y1="0"
+           y2="1400"
+           style="stroke:url(#linearGradient3994);stroke-width:2000;stroke-dasharray:1, 98, 1, 0"
+           id="line828" />
+      </g>
+    </g>
+  </g>
+</svg>
