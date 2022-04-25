@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .dropdown{
+    @apply absolute flex flex-col h-fit mt-8 -ml-8 px-4 rounded-sm bg-gray-200 dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80;
+  }
+}
+.nav-btn {
+  @apply relative text-center after:absolute after:w-0 after:h-[4px] after:left-0 after:top-7 text-gray-700 dark:text-gray-400 after:bg-orange-600
+  hover:scale-110 active:scale-110 active:text-orange-600 active:after:w-full transition-all ease-in-out after:transition-all after:ease-out after:duration-300;
+}
+.banner-btn {
+  @apply relative border-2 border-black dark:border-white text-black dark:text-white rounded-full px-4 py-2 after:absolute after:-z-20 after:inset-0 after:w-0 after:rounded-full after:bg-gradient-to-r after:from-red-600 after:to-orange-600  overflow-clip active:scale-90 focus:outline-none active:ring-4 active:ring-orange-300 dark:active:ring-orange-800 hover:after:w-full hover:border-0 hover:font-semibold transition-all duration-300 after:transition-all after:ease-in-out after:duration-300;
+}
+.icon-btn{
+  @apply fill-gray-700 dark:fill-gray-400 hover:scale-110 hover:-translate-y-1 transition-all ease-out duration-300;
+}
+.bg-nav{
+  @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-90 drop-shadow-md;
+}

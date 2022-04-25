@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/animation.css" />
+  <title>Arnab Maitra</title>
+</head>
+
+<body
+  class="bg-fixed -z-50 bg-gradient-to-t from-gray-200 to-white dark:bg-gradient-to-t dark:from-gray-900 dark:to-black bg-cover">
+  <div class="fixed inset-0 m-auto z-50 bg-white dark:bg-black bg-cover" id="preloader">
+    <div
+      class="absolute w-fit h-fit flex flex-col gap-4 dark:text-white text-3xl text-center font-bold tracking-widest inset-0 m-auto">
+      WELCOME
+      <div class="flex justify-between">
+        <div class="w-5 h-5 bg-red-600 rounded-full" id="dot1"></div>
+        <div class="w-5 h-5 bg-red-600 rounded-full" id="dot2"></div>
+        <div class="w-5 h-5 bg-red-600 rounded-full" id="dot3"></div>
+      </div>
+
+    </div>
+  </div>
+  <nav class="sticky top-0 z-40 w-full flex justify-between items-center" id="navbar">
+    <div class="text-2xl font-bold mx-6 py-2" id="logo">
+      <span class="mr-1 dark:text-white">ARNAB
+      </span>
+      <span
+        class="relative after:absolute after:w-3 after:h-3 after:bottom-1.5 after:bg-red-600 after:rounded-full after:animate-bounce"></span>
+    </div>
+    <div class="flex mx-6 my-auto">
+      <button class="mr-4 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 fill-gray-700 dark:fill-gray-400" id="menu"
+          aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+          <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+          <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-7 h-7 fill-gray-700 dark:fill-gray-400" id="close"
+          aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path
+            d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z" />
+        </svg>
+      </button>
+      <ul id="navigation"
+        class="hidden font-semibold max-md:dropdown text-sm mr-4 md:flex md:justify-between md:gap-x-8 transition-all duration-300">
+        <li class="my-2 nav-btn">
+          <a href="#home">HOME</a>
+        </li>
+        <li class="my-2 nav-btn">
+          <a href="#about">ABOUT</a>
+        </li>
+        <li class="my-2 nav-btn"><a href="#cv">CV</a></li>
+        <li class="my-2 nav-btn">
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+      <span class="my-auto text-xl text-gray-300 dark:text-gray-800">|</span>
+      <button class="ml-4" id="theme">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="inline-block w-5 h-5 fill-gray-700 hover:fill-amber-400 dark:hidden transition-all duration-300"
+          aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+          <path
+            d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+          <path
+            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="hidden w-7 h-7 dark:inline-block dark:fill-gray-400 dark:hover:fill-amber-300 transition-all duration-300"
+          aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+          <path
+            d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4Z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div
+    class="sticky top-0 sm:top-12 z-10 w-full flex flex-col sm:grid sm:grid-rows-1 sm:grid-cols-2 bg-gridsm dark:bg-gridDarksm sm:bg-grid sm:dark:bg-gridDark bg-contain bg-bottom bg-repeat-x"
+    id="banner">
+    <div
+      class="self-center sm:justify-self-center flex flex-col pt-6 sm:scale-90 md:scale-100 w-max sm:h-full sm:justify-center text-center sm:text-left dark:text-white"
+      id="quote">
+      <span class="text-2xl font-semibold">Hello! myself</span>
+      <span class="text-5xl font-bold">ARNAB
+        <span
+          class="relative after:absolute after:content-['MAITRA'] after:overflow-hidden after:text-clip after:text-black dark:after:text-white after:right-0 bg-gradient-to-r from-red-700 to-orange-600 bg-clip-text text-transparent animate-color">MAITRA</span></span>
+      <div class="text-2xl font-semibold text-black dark:text-white">
+        I'm a
+        <span class="relative font-bold italic after:absolute after:w-1 after:inset-y-0 after:bg-red-500"
+          id="typewriter"></span>
+      </div>
+      <div class="flex gap-6 py-6 justify-center sm:justify-start">
+        <button class="banner-btn">
+          <a href="https://drive.google.com/file/d/1xjFDSWQzKajr2JYgACDJH-8Le4P7n5QZ/view?usp=sharing" target=" ">DOWNLOAD CV</a>
+        </button>
+        <button class="banner-btn">
+          <a href="#getIntouch">GET IN TOUCH</a>
+        </button>
+      </div>
+    </div>
+    <div class="relative w-full sm:h-full flex flex-col items-center" id="dp-container">
+      <div
+        class="absolute inset-y-0 my-auto h-[234px] aspect-[3/2] bg-gradient-to-r from-orange-600 to-orange-700  transition-all duration-300 animate-blob"
+        id="blob"></div>
+      <img class="relative bottom-0 pt-6 h-[390px] hover:translate-x-1 transition-all ease-in-out duration-300"
+        src="images/employee-img.png" alt="" id="dp1" />
+    </div>
+  </div>
+  <main
+    class="relative z-20 px-12 py-8 grid grid-cols-[1fr,fit-content(100%)] gap-6 bg-white dark:bg-black text-gray-700 dark:text-gray-300">
+    <div class="flex flex-col gap-8">
+      <div
+        class="relative flex flex-col gap-6 sm:grid sm:grid-cols-[fit-content(100%),1fr] z-30 bg-white dark:bg-black text-gray-700 dark:text-gray-300">
+        <div id="dp2">
+          <img class="w-[300px] rounded-full mx-auto" src="images/mydp.jpeg" alt=""/>
+        </div>
+        <div class="mb-6 bg-gray-200 dark:bg-gray-900 rounded-md " id="carousel">
+          <ul
+            class="w-full h-[calc(100%+24px)] flex justify-between overflow-scroll snap-x snap-mandatory scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-700 dark:scrollbar-track-gray-400"
+            id="track">
+            <li class="w-full h-full flex-none p-6 snap-center" id="slide1">
+              <div class="relative mb-6 w-fit text-2xl font-bold text-black dark:text-white">
+                ABOUT ME</div>
+              <div class="text-justify text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rem
+                consequatur! Vero vel cum, omnis dignissimos ipsa reprehenderit
+                impedit est ad rerum quod porro autem possimus quidem odio
+                adipisci enim fugit atque blanditiis! Illo dolore in minus
+                consequuntur! Sint, consequuntur at rerum labore omnis placeat?
+                Suscipit, minima voluptates tenetur odit esse perspiciatis quas
+                expedita commodi aperiam sed dolore, pariatur aut, nesciunt
+                nostrum possimus inventore eius magnam nam ad! Aliquam
+              </div>
+            </li>
+            <li class="w-full h-full flex-none p-6 snap-center" id="slide2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At molestias tempore voluptatem reiciendis sint,
+              voluptate qui illo nobis sapiente alias, similique doloremque. Amet sapiente nesciunt iusto aspernatur est
+              dolore eaque?
+              Ipsam id consectetur adipisci tempore illum laudantium hic minima, nam nesciunt incidunt culpa doloribus
+              perspiciatis. Iusto fugit veritatis placeat saepe earum. Quos, distinctio rem aperiam ut porro eius
+              accusantium reiciendis?nihil libero. Beatae, aut laborum expedita magnam quia molestias assumenda.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-black">
+        <div class="text-center text-black dark:text-white text-2xl font-bold" id="getIntouch">GET IN TOUCH</div>
+        <form class="flex flex-col gap-6">
+          <div class="relative w-full">
+            <input type="text" id="name"
+              class="py-2.5 w-full text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-500 focus:outline-none focus:border-red-600 peer"
+              placeholder=" " required />
+            <label for="name"
+              class="absolute left-0 text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Full
+              name</label>
+          </div>
+          <div class="relative w-full">
+            <input type="email" id="email"
+              class="py-2.5 w-full text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-500 focus:outline-none focus:border-red-600 peer"
+              placeholder=" " required />
+            <label for="email"
+              class="absolute left-0 text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+              address</label>
+          </div>
+          <div class="relative w-full">
+            <input type="tel" id="phNo"
+              class="py-2.5 w-full text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-500 focus:outline-none focus:border-red-600 peer"
+              placeholder=" " required />
+            <label for="phNo"
+              class="absolute left-0 text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mobile
+              no.</label>
+          </div>
+          <div class="relative mt-6 w-full">
+            <textarea type="text" id="message"
+              class="py-2.5 w-full text-gray-900 bg-transparent border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-red-500 focus:outline-none focus:border-red-600 peer"
+              placeholder=" " required></textarea>
+            <label for="message"
+              class="absolute left-2 text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:left-0 peer-focus:text-red-600 peer-focus:dark:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">Leave
+              your message</label>
+          </div>
+          <button type="submit"
+            class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-md text-sm w-full py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-500 dark:focus:ring-red-800 transition-all ease-in-out duration-300"
+            id="send">Send
+            message</button>
+      </div>
+      </form>
+    </div>
+    </div>
+    <div class="sticky top-20 w-fit h-fit flex flex-col gap-8" id="icons" data-aos="fade-up"
+    data-aos-anchor-placement="center-center">
+      <a href="https://www.facebook.com/profile.php?id=100008663806033" target="_blank"><svg
+          class="w-7 h-7 icon-btn active:fill-blue-700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+          preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg></a>
+      <svg class="w-7 h-7 icon-btn active:fill-blue-700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+        role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248c-.015-.709-.52-1.248-1.342-1.248c-.822 0-1.359.54-1.359 1.248c0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586c.173-.431.568-.878 1.232-.878c.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252c-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+      </svg>
+      <svg class="w-7 h-7 icon-btn active:fill-purple-700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+        role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg>
+    </div>
+  </main>
+  <footer class="relative z-20 p-6 h-fit text-gray-700 dark:text-gray-400 bg-gray-200 dark:bg-gray-900">
+    <div class="text-black dark:text-white text-xl text-center">Contact Info</div>
+    <div class="max-w-[24rem] inset-0 mx-auto">
+      <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4 fill-gray-700 dark:fill-gray-400" aria-hidden="true" role="img"
+          style="vertical-align: -0.125em;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+          <path
+            d="M23.328 19.177c-.401-.203-2.354-1.156-2.719-1.292c-.365-.13-.63-.198-.896.203c-.26.391-1.026 1.286-1.26 1.547s-.464.281-.859.104c-.401-.203-1.682-.62-3.203-1.984c-1.188-1.057-1.979-2.359-2.214-2.76c-.234-.396-.026-.62.172-.818c.182-.182.401-.458.604-.698c.193-.24.255-.401.396-.661c.13-.281.063-.5-.036-.698s-.896-2.161-1.229-2.943c-.318-.776-.651-.677-.896-.677c-.229-.021-.495-.021-.76-.021s-.698.099-1.063.479c-.365.401-1.396 1.359-1.396 3.297c0 1.943 1.427 3.823 1.625 4.104c.203.26 2.807 4.26 6.802 5.979c.953.401 1.693.641 2.271.839c.953.302 1.823.26 2.51.161c.76-.125 2.354-.964 2.688-1.901c.339-.943.339-1.724.24-1.901c-.099-.182-.359-.281-.76-.458zM16.083 29h-.021c-2.365 0-4.703-.641-6.745-1.839l-.479-.286l-5 1.302l1.344-4.865l-.323-.5a13.166 13.166 0 0 1-2.021-7.01c0-7.26 5.943-13.182 13.255-13.182c3.542 0 6.865 1.38 9.365 3.88a13.058 13.058 0 0 1 3.88 9.323C29.328 23.078 23.39 29 16.088 29zM27.359 4.599C24.317 1.661 20.317 0 16.062 0C7.286 0 .14 7.115.135 15.859c0 2.792.729 5.516 2.125 7.927L0 32l8.448-2.203a16.13 16.13 0 0 0 7.615 1.932h.005c8.781 0 15.927-7.115 15.932-15.865c0-4.234-1.651-8.219-4.661-11.214z" />
+        </svg><span>WHATSAPP:</span> <span>629003972</span></div>
+      <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+          class="w-4 h-4 fill-gray-700 dark:fill-gray-400" aria-hidden="true" role="img"
+          style="vertical-align: -0.125em;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+          <path
+            d="M32 6v20c0 1.135-.865 2-2 2h-2V9.849l-12 8.62l-12-8.62V28H2c-1.135 0-2-.865-2-2V6c0-.568.214-1.068.573-1.422A1.973 1.973 0 0 1 2 4h.667L16 13.667L29.333 4H30c.568 0 1.068.214 1.427.578c.359.354.573.854.573 1.422z" />
+        </svg><span>EMAIL:</span> <span>maitra2001@gmail.com</span></div>
+      <div class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg"
+          class="w-[24px] h-[24px] fill-gray-700 dark:fill-gray-400" aria-hidden="true" role="img"
+          preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+          <path d="M8 0a5 5 0 0 0-5 5c0 5 5 11 5 11s5-6 5-11a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 0-6a3 3 0 0 1 0 6z" />
+        </svg><span>ADDRESS:</span><span>98/J Kumirjala Road, Mallickpara, Serampore, Hooghly, WB-712203</span></div>
+    </div>
+    </div>
+  </footer>
+</body>
+<script src="js/engine.js">
+  AOS.init();
+</script>
+</html>
